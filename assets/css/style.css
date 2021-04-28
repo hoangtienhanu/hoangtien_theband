@@ -90,7 +90,7 @@ html {
 #slider { 
    position: relative;
    padding-top:50%;
-   background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0BZ9tJztyDcRzh4HMv5dlSE0_DZQTbk9ypA&usqp=CAU') no-repeat top center / contain;
+   background: url('/assets/img/slider/slider1.jpg') no-repeat top center / contain;
    margin-top:46px;
 }
 #slider .text-content {
