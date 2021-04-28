@@ -1,0 +1,319 @@
+/* Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*css for header*/
+#header { 
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    height:46px;
+    background-color: #000;
+    z-index:1;
+}
+#header #nav{
+    display:inline-block;
+}
+#nav li {
+    display:inline-block;
+    position: relative;
+}
+#nav > li > a {
+    color:#fff;
+    line-height: 46px;
+    padding:0 24px;
+    display:block;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+}
+#nav > li:hover > a , #nav .subnav li:hover {
+    color:#000;
+    background-color: #ccc; 
+}
+#nav li:hover .subnav {
+    display:block;
+}
+#nav .subnav {
+    top:100%;    
+    left:0;
+    display:none;
+    position:absolute;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav .subnav li {
+    display:block;
+    padding:8px 16px;
+}
+#nav .subnav li a {
+    color:#000;
+}
+/*css for search btn*/
+#header .mobile-menu-btn,
+#header .search-btn {
+    float:right;
+    color:#fff;
+}
+#header .mobile-menu-btn {
+    position:absolute;
+    top:0;
+    right:0;
+    display:none;
+}
+#header .menu-icon,
+#header .search-btn .search-icon {
+    line-height: 46px;
+    padding:0 21px;
+    font-size:20px;
+}
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color:#000;
+}
+#header .search-btn:hover {
+    background-color: #f44336 !important;
+    cursor: pointer;
+}
+/*css for slider*/
+#slider { 
+   position: relative;
+   padding-top:50%;
+   background: url('/assets/img/slider/slider1.jpg') no-repeat top center / contain;
+   margin-top:46px;
+}
+#slider .text-content {
+    position:absolute;
+    bottom:32px;
+    color:#fff;
+    left:50%;
+    transform:translateX(-50%);
+    text-align: center;
+}
+#slider .text-content .text-heading {
+     margin-bottom:20px;
+     font-weight: 500;
+     font-size: 24px;
+}
+#slider .text-content .text-description {
+    font-size: 15px;
+}
+/*css for content*/
+
+#content .content-section {
+    width:800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:64px 0 112px;
+    padding-left:8px;
+    padding-right:16px;
+}
+#content .content-section .section-heading,
+#content .content-section .section-sub-heading {
+    text-align: center;
+    margin-bottom:20px;
+}
+#content .content-section .section-heading {
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+#content .content-section .section-sub-heading {
+    font-style: italic;
+    color:#999;
+    font-size: 15px;
+}
+/*css for about section*/
+#content .content-section .about-text {
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-list {
+    margin-top:48px;
+}
+#content .member-item {
+    float:left;
+    text-align: center;
+}
+#content .member-img {
+    width:154px;
+    border-radius: 4px;
+}
+#content .member-name {
+    margin-bottom:15px;
+}
+
+/*common css*/
+#clear {
+    clear:both !important;
+}
+.text-white {
+    color:#fff !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.col {
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-3 {
+    width:33.3333%;
+}
+.col-6 {
+    width:50%;
+}
+.col-12 {
+    width:100%;
+}
+.mt-8 {
+    margin-top:8px !important;
+}
+.mt-16 {
+    margin-top:16px!important;
+}
+.btn {
+    background-color: #000;
+    color:#fff;
+    cursor: pointer;
+}
+.btn:hover {
+    color:#000;
+    background-color: #ccc;
+}
+.pull-right{
+    float:right !important;
+}
+/*css for tour section*/
+#content .tour-section {
+    background-color: #000;
+}
+
+.tours-list {
+    background-color: #fff;
+    margin-top:40px;
+    list-style-type: none;
+}
+.tour-item {
+    padding:12px 20px;
+    border-bottom: 1px solid #ddd;
+    color:#757575;
+    font-size: 15px;
+}
+.tour-item .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    margin-left:16px;
+    padding:3px 4px;
+}
+.tour-item .quantity {
+    float:right;
+    width:24px;
+    height:24px;
+    background-color: #000;
+    border-radius: 50%;
+    color:#fff;
+    line-height:24px;
+    text-align: center;
+    margin-top:-3px;
+
+}
+/*css for place list*/
+.places-list {
+    margin-top:16px;
+}
+.place-item .place-img {
+    width:100%;
+    display:block;
+}
+.place-item .place-img:hover {
+    opacity: 0.6;
+}
+.place-body {
+    background-color: #fff;
+    padding:12px 16px;
+    font-size: 15px;
+}
+.place-body .place-heading {
+    font-weight: 600;
+}
+.place-time {
+    margin:20px 0px;
+    color: #757575;
+}
+.btn-buy-ticket {
+    text-decoration: none;
+    padding:11px 18px;
+    display:inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+/*css for contact*/
+.contact-content {
+    margin-top:48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="fas fa-"] {
+    width:30px;
+    display:inline-block;
+}
+.contact-form {
+    font-size:15px;
+}
+.contact-form .form-control {
+    padding:10px;
+    border:1px solid #ccc;
+    width:100%;
+}
+.contact-form .form-submit-btn {
+    font-size:15px;
+    border:none;
+    padding:8px 15px;
+    outline:none;
+}
+/*css for map section*/
+.map-section img {
+    width:100%;
+}
+#footer { 
+    padding: 64px 0px;
+    text-align: center;
+}
+#footer .social-list a{
+   color:#757575;
+   font-size:25px;
+   padding:2px;
+}
+#footer .social-list a:hover, 
+#footer .copy-right a:hover{
+    opacity: 0.6;
+}
+#footer .copy-right {
+    margin-top:15px;
+    color:#757575;
+}
+#footer .copy-right a{
+    color:#757575;
+}

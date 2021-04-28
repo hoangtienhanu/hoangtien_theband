@@ -1,0 +1,51 @@
+/*pc*/
+@media (min-width:1024px) {
+
+}
+/*tablet*/
+@media (min-width:740px) and (max-width:1023px) {
+
+}
+/*mobile*/
+@media (max-width:739px) {
+    #header {
+        overflow: hidden;
+    }
+    #header .mobile-menu-btn {
+        display:block;
+    }
+    #header .search-btn {
+        display:none;
+    }  
+    #header #nav {
+        display:block;
+    }
+    #nav .subnav  {
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav li a {
+        color:#fff;
+        padding: 5px 40px;
+    }
+    #nav >li {
+        display: block;
+    }
+    #nav > li:first-child {
+        display:inline-block !important;
+    }
+    #content .member-item {
+        margin-top:30px;
+        width:100%;
+    }
+    #content .member-img {
+        width:60%;
+    }
+    #content .s-col-12 {
+        width:100%;
+        margin-top:16px;
+    }
+    .s-full-width {
+        width: 100% !important;
+    }
+}
