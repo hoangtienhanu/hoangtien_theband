@@ -90,7 +90,7 @@ html {
 #slider { 
    position: relative;
    padding-top:50%;
-   background: url('/assets/img/slider/slider1.jpg') no-repeat top center / contain;
+   background: url('/assets/img/slider1.jpg') no-repeat top center / contain;
    margin-top:46px;
 }
 #slider .text-content {
